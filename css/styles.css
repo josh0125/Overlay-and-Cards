@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #F2D57E;
+    --gray:#454545;
+    --orange: #F2AF5C;
+    --pink: #EBC3C3;
+    --black: #1B1116;
+    --blue: #3C4865;
+  }
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: white;
+    color: var(--gray);
+    line-height: 1.5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h1, h2, h3 {
+    font-family: 'Halant', serif;
+    line-height: 1.2;
+}
+
+h1 {
+    color: var(--orange);
+    text-align: center;
+}
+
+h2 {
+    color: var(--blue);
+}
+
+h3 {
+    color: var(--black);
+}
+
+main {
+    margin: 0 auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom:15px;
+    max-width: 50rem;
+  }
+
+header {
+    margin-top: 15px;
+    margin-right: 25px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+svg {
+    fill: none;
+    stroke: var(--blue);
+    stroke-width: 5;
+    border: none;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.button {
+    font-size: 0.75rem;
+    line-height: 1.67;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 18px;
+    transition: 350ms;
+    color: var(--blue);
+    background-color: var(--yellow);
+    border: 2px solid var(--black);
+    display: inline-block;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 300ms, color 300ms;
+    
+  }
+  
+  .button:hover {
+    background-color: var(--blue);
+    color: var(--yellow);
+  }
+
+.floatright {
+    float: right;
+}
+
+.floatleft {
+    float: left;
+}
+
+.paddingbottom {
+    padding-bottom: 25px;
+}
+
+.center {
+    text-align: center;
+}
+
+.cards {
+    margin: 3rem;
+    display: flex;
+  }
+  
+  .card {
+    position: relative;
+    max-width: 400px;
+    min-width: 100px;
+    display: inline-block;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    color: var(--pink);
+    background: linear-gradient(to bottom, transparent 0, rgba(0,0,0.6) 100%);
+  }
+  
+  .text-overlay p {
+    margin: 0;
+      position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: background 200ms ease;
+  }
+  
+  .overlay:hover {
+    background: rgba(0,0,0,.4)
+  }
+
+
+  .hero {
+    position: relative;
+  }
+
+  .hero .text-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, transparent 0, rgba(0,0,0.6) 100%);
+  }
+
+  .hero p {
+      color: var(--pink);
+      text-align: center;
+  }

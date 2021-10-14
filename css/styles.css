@@ -167,3 +167,7 @@ svg {
     color: var(--pink);
     text-align: center;
   }
+
+.margin3 {
+  margin: 3rem;
+}
